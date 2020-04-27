@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Features</title>
+
+    <!-- attach our stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- the header -->
+    <header>
+
+        <!-- our main logo -->
+        <a id="logo" href="index.html">
+            <img src="">
+            <span>Hostel <i>guru</i></span>
+        </a>
+
+        <!-- main navigation links -->
+        <nav>
+            <ul>
+                <li><a href="features.html">Features</a></li>
+
+                <!--Complain menu-->
+                <li>
+                    <div class="dropdown">
+                    <a href="#">Complaints</a>
+                        <div class="dropdown-content">
+
+
+                            <!--new complain button-->
+                            <a onclick="document.getElementById('id03').style.display='block'" style="width:auto;">New Complaints</a>
+                            <div id="id03" class="modal"> 
+
+                                <form class="modal-content animate" action="/action_page.php"> 
+                                    <div class="imgcontainer"> 
+                                        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">×</span> 
+                                    
+                                        <h1>Complaint</h1> 
+                                    </div> 
+
+                                    <div class="container"> 
+                                        <label><b>Name</b></label> 
+                                        <input type="text" placeholder="Enter Name" name="name" required> 
+
+                                        <label><b>Room No</b></label> 
+                                        <input type="text" placeholder="Enter Room No" name="rno" required> 
+
+                                        <label><b>Complaint</b></label><br>
+                                        <input type="text" placeholder="Enter Complaint" name="cmp" required> 
+
+                                        <button type="submit">Submit</button> 
+                                         
+                                    </div> 
+
+                                    <div class="container" style="background-color:#f1f1f1"> 
+                                        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                                         
+                                    </div> 
+                                </form> 
+                            </div>
+
+
+
+
+                            <a href="#">Complaints Status</a>
+                            <a href="#">Complaints History</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!--feedback button-->
+                <li>
+                    <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Feedback</a>
+                    <div id="id02" class="modal"> 
+                        <form class="modal-content animate" action="/action_page.php"> 
+                            <div class="imgcontainer"> 
+                                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span> 
+                                <h1>Feedback</h1> 
+                            </div> 
+                  
+                            <div class="container"> 
+                                <label><b>Give your feedback here.</b></label> 
+                                <textarea rows="8" cols="160" placeholder="feedback"></textarea>                   
+                                <button type="submit">Submit</button> 
+                                
+                            </div> 
+                  
+                            <div class="container" style="background-color:#f1f1f1"> 
+                                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                                
+                            </div> 
+                        </form> 
+                    </div> 
+                </li>
+
+
+                <li><a href="#">Ragging</a></li>
+                <li><a href="#">About</a></li>
+                
+
+                <!-- login/signup button -->
+                <li>
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login/Sign up</button> 
+      
+                    <div id="id01" class="modal"> 
+                  
+                        <form class="modal-content animate" action="/action_page.php"> 
+                            <div class="imgcontainer"> 
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span> 
+                                
+                                <h1>Login</h1> 
+                            </div> 
+                  
+                            <div class="container"> 
+                                <label><b>Username</b></label> 
+                                <input type="text" placeholder="Enter Username" name="uname" required> 
+                  
+                                <label><b>Password</b></label> 
+                                <input type="password" placeholder="Enter Password" name="psw" required> 
+                  
+                                <button type="submit">Login</button> 
+                                <a href="signup.html">Create a new account</a> 
+                            </div> 
+                  
+                            <div class="container" style="background-color:#f1f1f1"> 
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw"><a href="#">Forgot password?</a></span> 
+                            </div> 
+                        </form> 
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- the content -->
+    <main>
+
+        <!-- hero content -->
+        <div class="hero">
+            <!-- content for the hero -->
+            <div class="hero-content">
+                <h1 class="hero-title">HOSTEL <i>guru</i></h1>
+                <p>One stop solution for all your Complaints.</p>
+
+            </div>
+        </div>
+
+        <!-- features section -->
+        <div class="site-section">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>Features</h2>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/gri.jpg" alt="Easy to Use">
+                <h5>Grievance</h5>
+                <p>Feel free to let us know about your grievances for quick solution. Our goal is to make your stay at hostel comfortable and hassle free. Whatever it is just let us know by filling up a complaint form. Our executive will get back to you as soon as possible.</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/food.jpg" alt="Fun to Use">
+                <h5>Food quality</h5>
+                <p>We continuously work towards improving our food quality. Just keep giving your valuable feedback daily and be at peace thinking that someone is taking care of your concerns. The more you keep us updated, the more we are encouraged to do our job better.</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/feedback.png" alt="Fun to Use">
+                <h5>Feedback</h5>
+                <p>Your feedback is the backbone of our concept. Feel free to give your feedback. It is as easy as ABC. Any suggestion by you will be welcomed by us.</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/help.jpg" alt="Easy to Use">
+                <h5>Fast Redressal</h5>
+                <p>We know that in your busy schedule it is quite inevitable wanting not to get into the hassle of complaining and then waiting for an action to be taken. To avoid this, our executives work 24*7. Your complaints will be answered back within 24 hours. </p>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/callin.jpg" alt="Easy to Use">
+                <h5>Call in Services</h5>
+                <p>We provide you with essential services at just one click.</p>
+                <ul>
+                    <li>Cleaner</li>
+                    <li>Handyman</li>
+                    <li>Plumber</li>
+                    <li>Laundry</li>
+    
+                
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/raging.jpg" alt="Easy to Use">
+                <h5>Ragging/harassment</h5>
+                <p>Feel free to report any incident of ragging or any kind of harassment. It's your right to live freely. We respect your privacy and hence do not believe in disclosing identity. <br>Anti-Ragging Number- 8899776655 </p>
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+    <!-- the footer -->
+    <footer>
+        <img src="" >
+        <span>Hostel guru<br>Copyright &copy; 2016-3010 </span>
+    </footer>
+
+</body>
+</html>

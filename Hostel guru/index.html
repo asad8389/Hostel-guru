@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Hostel guru</title>
+
+    <!-- attach our stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- the header -->
+    <header>
+
+        <!-- our main logo -->
+        <a id="logo" href="index.html">
+            <img src="">
+            <span>Hostel <i>guru</i></span>
+        </a>
+
+        <!-- main navigation links -->
+        <nav>
+            <ul>
+                <li><a href="features.html">Features</a></li>
+
+                <!--Complain menu-->
+                <li>
+                    <div class="dropdown">
+                    <a href="#">Complaints</a>
+                        <div class="dropdown-content">
+
+
+                            <!--new complain button-->
+                            <a onclick="document.getElementById('id03').style.display='block'" style="width:auto;">New Complaints</a>
+                            <div id="id03" class="modal"> 
+
+                                <form class="modal-content animate" action="/action_page.php"> 
+                                    <div class="imgcontainer"> 
+                                        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">×</span> 
+                                    
+                                        <h1>Complaint</h1> 
+                                    </div> 
+
+                                    <div class="container"> 
+                                        <label><b>Name</b></label> 
+                                        <input type="text" placeholder="Enter Name" name="name" required> 
+
+                                        <label><b>Room No</b></label> 
+                                        <input type="text" placeholder="Enter Room No" name="rno" required> 
+
+                                        <label><b>Complaint</b></label><br>
+                                        <input type="text" placeholder="Enter Complaint" name="cmp" required> 
+
+                                        <button type="submit">Submit</button> 
+                                         
+                                    </div> 
+
+                                    <div class="container" style="background-color:#f1f1f1"> 
+                                        <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                                         
+                                    </div> 
+                                </form> 
+                            </div>
+
+
+
+
+                            <a href="#">Complaints Status</a>
+                            <a href="#">Complaints History</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!--feedback button-->
+                <li>
+                    <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Feedback</a>
+                    <div id="id02" class="modal"> 
+                        <form class="modal-content animate" action="/action_page.php"> 
+                            <div class="imgcontainer"> 
+                                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span> 
+                                <h1>Feedback</h1> 
+                            </div> 
+                  
+                            <div class="container"> 
+                                <label><b>Give your feedback here.</b></label> 
+                                <textarea rows="8" cols="160" placeholder="feedback"></textarea>                   
+                                <button type="submit">Submit</button> 
+                                
+                            </div> 
+                  
+                            <div class="container" style="background-color:#f1f1f1"> 
+                                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                                
+                            </div> 
+                        </form> 
+                    </div> 
+                </li>
+
+
+                <li><a href="https://www.antiragging.in/">Ragging</a></li>
+                <li><a href="#">About</a></li>
+                
+
+                <!-- login/signup button -->
+                
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login/Sign up</button> 
+      
+                    <div id="id01" class="modal"> 
+                  
+                        <form class="modal-content animate" action="/action_page.php"> 
+                            <div class="imgcontainer"> 
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span> 
+                                
+                                <h1>Login</h1> 
+                            </div> 
+                  
+                            <div class="container"> 
+                                <label><b>Username</b></label> 
+                                <input type="text" placeholder="Enter Username" name="uname" required> 
+                  
+                                <label><b>Password</b></label> 
+                                <input type="password" placeholder="Enter Password" name="psw" required> 
+                  
+                                <button type="submit">Login</button> 
+                                <a href="signup.html">Create a new account</a> 
+                            </div> 
+                  
+                            <div class="container" style="background-color:#f1f1f1"> 
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw"><a href="#">Forgot password?</a></span> 
+                            </div> 
+                        </form> 
+                    </div>
+                
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- the content -->
+    <main>
+
+        <!-- hero content -->
+        <div class="hero">
+            <!-- content for the hero -->
+            <div class="hero-content">
+                <h1 class="hero-title">HOSTEL <i>guru</i></h1>
+                <p>One stop solution for all your Complaints.</p>
+
+            </div>
+        </div>
+
+        <!-- features section -->
+        <div class="site-section">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>Key Features</h2>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/like.png" alt="Easy to Use">
+                <h5>Easy to Use</h5>
+                <p>Simply file your Complain to HOSTEL Guru and we'll get back to you as soon as we can</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/faces.png" alt="Fun to Use">
+                <h5>Food</h5>
+                <p>Food quality issue is no longer an issue, we got you covered.</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/heart.png" alt="Fun to Use">
+                <h5>You'll Love It</h5>
+                <p>We have a special section for ragging and harassment!</p>
+            </div>
+
+        </div>
+        </div>
+
+        <!-- testimonials section -->
+        <div class="site-section site-section-secondary">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>What the people say</h2>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="testimonial-content">
+                    Their service is by far the most influential I've ever seen.
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/david.jpg" alt="David East">
+                    <h5>David East</h5>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="testimonial-content">
+                    My life become easy after using hostel guru.
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/holly.jpg" alt="Holly Lloyd">
+                    <h5>Holly Lloyd</h5>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="testimonial-content">
+                    Best in this field.
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/brad.jpg" alt="Brad Green">
+                    <h5>Brad Green</h5>
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </main>
+
+    <!-- the footer -->
+    <footer>
+        <img src="" >
+        <span>Hostel guru<br>Copyright &copy; 2016-3010 </span>
+    </footer>
+
+</body>
+</html>
